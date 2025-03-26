@@ -61,6 +61,24 @@
   font-size: 24px;
 }
 
+.artBox {
+    border: solid 0px #999999;
+    transition: box-shadow 300ms ease;
+    border-radius: 5px;
+}
+
+.artBox:hover {
+    border: solid 0px #999999;
+    box-shadow: 2px 2px 5px #999;
+}
+
+.logo-fat {
+    font-family: "calistomt";
+    font-size: 22pt;
+    font-weight: 800;
+    color: #212529;
+}
+
 .text-lightgrey{
   color: #999999;
   font-family: "calistomt";
