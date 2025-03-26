@@ -6,14 +6,18 @@
 /* =================================== */
 /*  Basic Style 
 /* =================================== */
+@font-face {
+  font-family: "calistomt";
+  src: url(../fonts/calistomt.ttf) format("truetype");
+}
 ::-moz-selection {
   /* Code for Firefox */
-  background-color: #88d200;
+  background-color: #2600ff;
   color: #fff;
 }
 
 ::selection {
-  background-color: #88d200;
+  background-color: #2600ff;
   color: #fff;
 }
 
@@ -49,9 +53,49 @@
   font-weight: 300;
 }
 
+:root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "calistomt";
+  font-size: 24px;
+}
+
+.text-lightgrey{
+  color: #999999;
+  font-family: "calistomt";
+  font-size: 16px;
+  text-align: left;
+}
+.custom-footer {
+  position: absolute;
+  font-family: "calistomt";
+  font-size: 24px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: #808080;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.fz-24pt {
+  font-size: 24px;
+}
+
+.fz-30pt {
+  font-size: 40px;
+}
+
 body {
   color: #777777;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "calistomt"; 
   font-size: 14px;
   font-weight: 300;
   line-height: 1.625em;
@@ -123,9 +167,11 @@ h4, h5, h6 {
   line-height: 1.2em !important;
   margin-bottom: 0;
   margin-top: 0;
-  font-weight: 600;
+  font-weight: 400;
 }
-
+.h1-index {
+  font-size: 56px;
+}
 .h1, .h2, .h3,
 .h4, .h5, .h6 {
   margin-bottom: 0;
@@ -136,7 +182,7 @@ h4, h5, h6 {
 }
 
 h1, .h1 {
-  font-size: 36px;
+  font-size: 56px;
 }
 
 h2, .h2 {
@@ -181,6 +227,8 @@ td, th {
 .clear::after {
   clear: both;
 }
+
+
 
 .fz-11 {
   font-size: 11px;
@@ -566,6 +614,11 @@ td, th {
   font-style: italic;
 }
 
+.text-gray {
+  color: #808080;
+  font-family: "calistomt"
+}
+
 .text-white {
   color: #fff;
 }
@@ -786,7 +839,7 @@ b, sup, sub, u, del {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 56px;
 }
 
 h2 {
@@ -1876,17 +1929,17 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  padding: 0px 0px 14px 0;
-  position: fixed;
+ /* padding: 0px 0px 14px 0;*/
+  position: sticky;
   left: 0;
   top: 0;
   right: 0;
-  transition: all 0.5s;
+  transition: all;
   z-index: 997;
 }
 
 #header hr {
-  border-color: rgba(255, 255, 255, 0.3);
+  /*border-color: rgba(255, 255, 255, 0.3);*/
   margin-top: 5px;
 }
 
@@ -1896,7 +1949,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-top a {
-  color: #fff;
+  color: #808080;
   font-size: 12px;
 }
 
@@ -1926,7 +1979,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgb(255, 255, 255);
   transition: all 0.5s;
 }
 
@@ -1937,7 +1990,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header #logo h1 {
-  font-size: 34px;
+  font-size: 56px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -1958,7 +2011,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   #header #logo h1 {
-    font-size: 28px;
+    font-size: 56px;
   }
   #header #logo img {
     max-height: 40px;
@@ -2041,9 +2094,9 @@ h1, h2, h3, h4, h5, h6 {
   padding: 6px 10px;
   text-decoration: none;
   display: inline-block;
-  color: #fff;
+  color: #808080;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
   outline: none;
 }
@@ -2297,7 +2350,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-area .overlay-bg {
-  background-color: rgba(0, 0, 0, 0.7);
+  /*background-color: rgba(0, 0, 0, 0.7); */
 }
 
 .banner-content {
@@ -2306,7 +2359,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-content h1 {
-  font-size: 48px;
+  font-size: 56px;
   font-weight: 700;
   line-height: 1em;
   margin-top: 20px;
@@ -2318,7 +2371,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 991.98px) {
   .banner-content h1 {
-    font-size: 36px;
+    font-size: 56px;
   }
 }
 
@@ -2330,7 +2383,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 1199.98px) {
   .banner-content h1 {
-    font-size: 45px;
+    font-size: 56px;
   }
 }
 
@@ -2422,9 +2475,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .quote-left h1 {
-  font-size: 30px;
+  font-size: 24px; # descrizione
   text-align: right;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .quote-left h1 span {
