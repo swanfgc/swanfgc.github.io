@@ -60,6 +60,29 @@
   font-family: "calistomt";
   font-size: 24px;
 }
+.navbar-nav a {
+  padding: 6px 10px;
+  text-decoration: none;
+  display: inline-block;
+  color: #808080;
+  font-weight: 500;
+  font-family: Poppins;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.navbar a {
+  padding: 6px 10px;
+  text-decoration: none;
+  display: inline-block;
+  color: #808080;
+  font-weight: 400;
+  font-family: Poppins;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+}
 
 .artBox {
     border: solid 0px #999999;
