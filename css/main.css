@@ -132,10 +132,18 @@
   font-size: 20px;
 }
 
+.fz-18pt {
+  font-size: 18px;
+}
 
 .fz-30pt {
   font-size: 40px;
 }
+
+.fz-60pt {
+  font-size: 60px;
+}
+
 
 body {
   color: #777777;
@@ -2974,7 +2982,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .about-content h1 {
-  font-size: 48px;
+  font-size: 80px;
   font-weight: 300;
 }
 
