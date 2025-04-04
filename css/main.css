@@ -2999,7 +2999,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 .about-content h1 {
   font-size: 80px;
   font-weight: 300;
-  text-shadow: 0px 0px 6px grey;
+  text-shadow: 6px 6px 6px grey;
+}
+
+.navbar-light .navbar-brand {
+    color: #808080;
 }
 
 .about-content a {
