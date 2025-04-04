@@ -2999,6 +2999,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .about-content h1 {
   font-size: 80px;
   font-weight: 300;
+  text-shadow: 0px 0px 6px grey;
 }
 
 .about-content a {
