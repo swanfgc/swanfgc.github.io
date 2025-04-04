@@ -128,6 +128,11 @@
   font-size: 24px;
 }
 
+.fz-20pt {
+  font-size: 20px;
+}
+
+
 .fz-30pt {
   font-size: 40px;
 }
@@ -2515,7 +2520,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .quote-left h1 {
-  font-size: 24px; # descrizione
+  font-size: 20px;
   text-align: right;
   font-weight: 400;
 }
@@ -2964,7 +2969,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .about-content {
-  padding: 350px 0px;
+  padding: 450px 0px;
   text-align: center;
 }
 
